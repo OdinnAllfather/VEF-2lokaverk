@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="animate__fadeInDown">
+        <span class="logo icon-Hollow-Knight-Title"></span>
+    </header>
+    <nav class="topnav">
+      <input type="checkbox" id="toggle">
+      <label for="toggle"><span class="icon-list2"></span> </label>
+      <section class="topmenu">
+        <a href="index.html">Home</a>
+        <a href="https://www.fangamer.eu/collections/hollow-knight">Fangamer Store</a>
+        <a href="https://store.steampowered.com/app/367520/Hollow_Knight/">Steam Page</a>
+      </section>
+    </nav>
+
+    <table class="schedule">
+        <caption>Vorulisti</caption>
+        <thead>
+          <tr>
+            <th style="width:35%"><h3>VARA</h3></th>
+            <th style="width:35%"><h3>VERÐ</h3></th>
+            <th style="width:15%"><h3>FÁANLEIKI</h3></th>
+            <th style="width:15%"><h3>PANTA</h3></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td data-label="VARA"><h3>Bangsi</h3></td>
+            <td data-label="VERÐ"><h3>4.699 Kr.</h3></td>
+            <td data-label="FÁANLEIKI">Til</td>
+            <td data-label="PANTA"><a href="#form"><button>PANTA</button></a></td>
+          </tr>
+          <tr>
+              <td data-label="VARA"><h3>Peysa</h3></td>
+              <td data-label="VERÐ"><h3>12.299 Kr.</h3></td>
+              <td data-label="FÁANLEIKI">Til</td>
+              <td data-label="PANTA"><a href="#form"><button>PANTA</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="VARA"><h3>Bolur</h3></td>
+            <td data-label="VERÐ"><h3>5.599 Kr.</h3></td>
+            <td data-label="FÁANLEIKI">Ekki Til</td>
+            <td data-label="PANTA"><a href="#form"><button>PANTA</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="VARA"><h3>Plata</h3></td>
+            <td data-label="VERÐ"><h3>6.599 Kr.</h3></td>
+            <td data-label="FÁANLEIKI">Til</td>
+            <td data-label="PANTA"><a href="#form"><button>PANTA</button></a></td>
+          </tr>
+          <tr>
+            <td data-label="VARA"><h3>Fígúra</h3></td>
+            <td data-label="VERÐ"><h3>6.599 Kr.</h3></td>
+            <td data-label="FÁANLEIKI">Ekki Til</td>
+            <td data-label="PANTA"><a href="#form"><button>PANTA</button></a></td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="4" class="center">Fangamer.eu</th>
+          </tr>
+        </tfoot>
+    </table>
+
+    <form method="get" action="takk.html" id="form">
+        <h3><em>Panta vöru <br> (This is not a real form and does not submit or save any information.)</em></h3>
+        <fieldset> 
+            <section class="col-2">
+                <section>
+                    <p>
+                        <label>Firsta nafn</label>
+                        <input type="text" name="first_name" required placeholder="Fornafn">
+                    </p>
+                    <p>
+                        <label>Seinna nafn</label>
+                        <input type="text" name="last_name" required placeholder="Eftyrnafn">
+                    </p>
+                </section>
+                <section>
+                    <p>
+                        <label>Tölvupóstur</label><br>
+                        <input type="email" name="email" required placeholder="Tölvupóstur">
+                    </p>
+                    <p>
+                        <label>Símanúmer</label><br>
+                        <input type="tel" name="phone" placeholder="7 tölur" pattern="\d{3}(?:[\-\s]?)\d{4}">
+                    </p>
+                </section>
+            </section>
+            <section class="col-3">
+                <p>
+                    <label>Vara</label><br>
+                    <select required>
+                        <option>Bangsi</option>
+                        <option>Peysa</option>
+                        <option>Bolur</option>
+                        <option>Plata</option>
+                        <option>Fígúra</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Borg/Bær</label>
+                    <input type="text" required placeholder="Reykjavík">
+                </p>
+                <p>
+                    <label>Póstnúmer</label>
+                    <input type="text" required placeholder="101">
+                </p>
+            </section>
+            <section class="col-2">
+              <p>
+                <label>Gata</label>
+                <input type="text" required placeholder="Suðurlandsbraut">
+              </p>
+              <p>
+                <label>Götunúmer</label>
+                <input type="number" required placeholder="1">  
+              </p>
+            </section>
+            <p>
+                <label>Comments</label><br>
+                <textarea rows="3" placeholder="Comment"></textarea>
+            </p>
+            <p>
+                <label>
+                    <input type="checkbox" value="terms" required>
+                    I agree to the <a>terms and conditions</a>
+                </label>
+            </p>
+            <p>
+              <button type="submit">Panta</button>
+              <button type="reset" disabled>Reset form</button>
+            </p>
+        </fieldset>
+    </form>
+    
+    <footer class="container col-3">
+      <nav>
+        <ul>
+          <li><a href="https://www.hollowknight.com">Offical Hollow Knight Website</a></li>
+          <li><a href="https://hollowknightsilksong.com">Offical Silksong Website</a></li>
+          <li><a href="https://www.teamcherry.com.au">Offical Team Cherry Website</a></li>
+        </ul>
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="#.pdf">PDF Document</a></li>
+          <li><a href="#.doc">Word Document</a></li>
+          <li><a href="#.jpg">Image File</a></li>
+          <li><a href="#.mp3">Audio File</a></li>
+          <li><a href="#.mp4">Video File</a></li>
+        </ul>
+      </nav>
+      <dl>              <!--Description list -->
+        <dt>Nafn</dt>
+          <dd>Óðinn Örn Kjærnested <span class="icon-Logo"></span></dd>
+        <dt>Tölvupóstur</dt>
+          <dd>odinnkj24@tskoli.is</dd>
+        <dt>Vefhönnun</dt>
+          <dd>VEFÞ2VHB5AU, tölvubraut Tækniskólans</dd>
+      </dl>
+    </footer>
+</body>
+</html>
